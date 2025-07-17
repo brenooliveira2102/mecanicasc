@@ -319,9 +319,18 @@
         <!-- ===== Avaliações do Google ===== -->
         <section id="avaliacoes" class="py-16 md:py-24 bg-white">
             <div class="container mx-auto px-4">
-                 <a href="https://g.co/kgs/aUW3WNS" target="_blank" class="flex flex-wrap items-center justify-center gap-4 mb-12">
+                 <a href="https://g.co/kgs/aUW3WNS" target="_blank" class="flex flex-col items-center justify-center gap-4 mb-12">
                      <h2 class="section-title text-center">Avaliações de Nossos <span class="text-[#FF0000]">Clientes</span></h2>
-                     <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Logo do Google" class="h-10 md:h-12">
+                     <div class="flex items-center gap-4">
+                        <div class="flex items-center gap-1">
+                            <i class="fa-solid fa-star text-yellow-400 text-2xl md:text-3xl"></i>
+                            <i class="fa-solid fa-star text-yellow-400 text-2xl md:text-3xl"></i>
+                            <i class="fa-solid fa-star text-yellow-400 text-2xl md:text-3xl"></i>
+                            <i class="fa-solid fa-star text-yellow-400 text-2xl md:text-3xl"></i>
+                            <i class="fa-solid fa-star text-yellow-400 text-2xl md:text-3xl"></i>
+                        </div>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Logo do Google" class="h-10 md:h-12">
+                     </div>
                  </a>
                 <div class="swiper-container-reviews">
                     <div class="swiper-wrapper" id="reviews-wrapper">
@@ -439,11 +448,14 @@
             });
 
             const reviews = [
+                { name: "Guilherme Medeiros", avatar: "", stars: 5, date: "1 semana atrás", text: "Empresa tem um compromisso claro com a qualidade e a satisfação do cliente. É uma empresa que superou nossas expectativas. Recomendo." },
+                { name: "Daniel Anziliero", avatar: "", stars: 5, date: "1 semana atrás", text: "Ótimo atendimento, e serviço de excelência de toda a equipe SC mecânica." },
+                { name: "Eduardo Bringhenti", avatar: "", stars: 5, date: "2 semanas atrás", text: "Atendimento excelente e serviço de alta qualidade! A equipe da SC Mecânica é muito profissional, ágil e sempre busca a melhor solução. Recomendo fortemente!" },
                 { name: "Wilk Biazotto", avatar: "", stars: 5, date: "1 mês atrás", text: "Pra quem precisa de solução, Silvonei e os guri dão um jeito, o preço é alto, mas justos, pois esse resolve!!!" },
-                { name: "Vanderlei Da Silva", avatar: "", stars: 5, date: "2 anos atrás", text: "Ótimo lugar para manutenção do seu caminhao" },
-                { name: "Daian Schmitt", avatar: "", stars: 5, date: "6 meses atrás", text: "Serviço de primeira qualidade, recomendo!" },
                 { name: "Jucemar De Souza", avatar: "", stars: 5, date: "1 mês atrás", text: "Recomendo ótimo atendimento" },
-                { name: "Douglas Tormen", avatar: "", stars: 5, date: "3 meses atrás", text: "Serviço de qualidade e o pessoal e bem atencioso." }
+                { name: "Douglas Tormen", avatar: "", stars: 5, date: "3 meses atrás", text: "Serviço de qualidade e o pessoal e bem atencioso." },
+                { name: "Vanderlei Da Silva", avatar: "", stars: 5, date: "2 anos atrás", text: "Ótimo lugar para manutenção do seu caminhao" },
+                { name: "Daian Schmitt", avatar: "", stars: 5, date: "6 meses atrás", text: "Serviço de primeira qualidade, recomendo!" }
             ];
 
             const reviewsWrapper = document.getElementById('reviews-wrapper');
